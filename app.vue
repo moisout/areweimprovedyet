@@ -1,14 +1,13 @@
 <script setup>
 useHead({
-  title: "Are we improved yet?"
-});
-const versions = useState("vers-1", () => process.versions);
-onMounted(() => {
-  console.log(versions.value);
+  titleTemplate: "Are we improved yet?",
+  meta: [{ name: "description", content: "Is liferay-npm-bundler-improved ready for production?" }],
+  charset: "utf-8"
 });
 </script>
 
 <template>
+  <Html lang="en" />
   <main>
     <div class="center">
       <h1>No</h1>
@@ -42,7 +41,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: "sans-serif";
+  font-family: sans-serif, "Arial";
 
   .center {
     margin: auto;
