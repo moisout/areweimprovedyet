@@ -35,8 +35,9 @@ const blockers = [
       </a>
     </div>
     <div class="center">
-      <h1>No</h1>
-      <div class="blockers">
+      <h1 v-if="blockers.length">No</h1>
+      <h1 v-else>Yes</h1>
+      <div v-if="blockers.length" class="blockers">
         <h2>Blockers</h2>
         <ul>
           <li v-for="(blocker, id) in blockers" :key="id">
