@@ -2,6 +2,10 @@
 useHead({
   title: "Are we improved yet?"
 });
+const versions = useState("vers-1", () => process.versions);
+onMounted(() => {
+  console.log(versions.value);
+});
 </script>
 
 <template>
