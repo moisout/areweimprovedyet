@@ -11,10 +11,14 @@ useHead({
       <div class="blockers">
         <h2>Blockers</h2>
         <ul>
+          <li>lnbs-copy-assets: Bundle assets with liferay-npm-bundler-improved</li>
+          <li>
+            Configuration support [<a href="https://github.com/jwanner83/liferay-npm-bundler-improved/issues/8">#8</a>]
+          </li>
           <li>
             Windows support [<a href="https://github.com/jwanner83/liferay-npm-bundler-improved/issues/36">#36</a>]
           </li>
-          <li>JSP gradle build support</li>
+          <li>Use liferay-npm-bundler-improved without jar generation</li>
         </ul>
       </div>
     </div>
