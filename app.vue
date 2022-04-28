@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  titleTemplate: "Are we improved yet?",
+  title: "Are we improved yet?",
   meta: [{ name: "description", content: "Is liferay-npm-bundler-improved ready for production?" }],
   charset: "utf-8"
 });
