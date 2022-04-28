@@ -1,30 +1,39 @@
 <script setup>
 useHead({
-  title: "Are we improved yet?",
-  meta: [{ name: "description", content: "Is liferay-npm-bundler-improved ready for production?" }],
-  charset: "utf-8"
+  title: 'Are we improved yet?',
+  meta: [
+    {
+      name: 'description',
+      content: 'Is liferay-npm-bundler-improved ready for production?',
+    },
+  ],
+  charset: 'utf-8',
 });
 
-const blockers = [
-  { title: "Allow Configuration", issue: 8 },
-  { title: "Enable bundling assets", issue: 39 },
-  { title: "Windows support", issue: 36 },
-  { title: "Enable transpilation of JavaScript only without JAR generation", issue: 40 },
-  { title: "Deploy in production", issue: 41 }
-];
+const repoUrl = 'https://github.com/jwanner83/liferay-npm-bundler-improved';
+
+const blockers = ref([
+  { title: 'Allow Configuration', issue: 8 },
+  { title: 'Enable bundling assets', issue: 39 },
+  { title: 'Windows support', issue: 36 },
+  {
+    title: 'Enable transpilation of JavaScript only without JAR generation',
+    issue: 40,
+  },
+  { title: 'Deploy in production', issue: 41 },
+]);
 </script>
 
 <template>
   <Html lang="en" />
   <main>
     <div class="github">
-      <a href="https://github.com/jwanner83/liferay-npm-bundler-improved" rel="noreferrer noopener" target="_blank">
+      <a :href="repoUrl" rel="noreferrer noopener" target="_blank">
         <GithubLogo />
       </a>
     </div>
     <div class="center">
-      <h1 v-if="blockers.length">No</h1>
-      <h1 v-else>Yes</h1>
+      <h1>{{ blockers.length ? 'No' : 'Yes' }}</h1>
       <div v-if="blockers.length" class="blockers">
         <h2>Blockers</h2>
         <ul>
@@ -32,7 +41,7 @@ const blockers = [
             {{ blocker.title }}
             <span v-if="blocker.issue">
               [<a
-                :href="`https://github.com/jwanner83/liferay-npm-bundler-improved/issues/${blocker.issue}`"
+                :href="`${repoUrl}/issues/${blocker.issue}`"
                 rel="noreferrer noopener"
                 target="_blank"
                 >#{{ blocker.issue }}</a
@@ -48,23 +57,20 @@ const blockers = [
 <style lang="scss">
 html,
 body,
-#__nuxt {
+#__nuxt,
+main {
   margin: 0;
   height: 100%;
   width: 100%;
 }
 main {
-  height: 100%;
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  font-family: sans-serif, "Arial";
+  font-family: Arial, Helvetica, sans-serif;
 
   .github {
     position: absolute;
-    top: 0;
     right: 0;
-    padding: 20px;
+    margin: 20px;
   }
 
   .center {
