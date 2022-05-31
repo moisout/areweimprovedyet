@@ -14,8 +14,6 @@ const repoUrl = 'https://github.com/jwanner83/liferay-npm-bundler-improved';
 
 const blockers = ref([
   { title: 'Allow Configuration', issue: 8 },
-  { title: 'Enable bundling assets', issue: 39 },
-  { title: 'Windows support', issue: 36 },
   {
     title: 'Enable transpilation of JavaScript only without JAR generation',
     issue: 40,
