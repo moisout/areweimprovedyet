@@ -1,6 +1,7 @@
 {
   "private": true,
   "type": "module",
+  "main": ".output/server/index.mjs",
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
