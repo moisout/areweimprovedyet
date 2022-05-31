@@ -7,9 +7,12 @@
     "preview": "nuxi preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.1"
+    "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
-    "sass": "^1.51.0"
+    "sass": "^1.52.1"
+  },
+  "volta": {
+    "node": "18.2.0"
   }
 }
