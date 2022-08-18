@@ -13,11 +13,7 @@ useHead({
 const repoUrl = 'https://github.com/jwanner83/liferay-npm-bundler-improved';
 
 const blockers = ref([
-  {
-    title: 'Enable transpilation of JavaScript only without JAR generation',
-    issue: 40,
-  },
-  { title: 'Deploy in production', issue: 41 },
+
 ]);
 </script>
 
