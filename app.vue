@@ -12,9 +12,7 @@ useHead({
 
 const repoUrl = 'https://github.com/jwanner83/liferay-npm-bundler-improved';
 
-const blockers = ref([
-
-]);
+const blockers = ref([]);
 </script>
 
 <template>
@@ -27,6 +25,12 @@ const blockers = ref([
     </div>
     <div class="center">
       <h1>{{ blockers.length ? 'No' : 'Yes' }}</h1>
+      <div class="blockers">
+        <a
+          href="https://clavisit-wiki.atlassian.net/wiki/spaces/WS/blog/2022/08/18/3757703622/liferay-npm-bundler-improved+-+Let+s+Go"
+          >Check the blog post!</a
+        >
+      </div>
       <div v-if="blockers.length" class="blockers">
         <h2>Blockers</h2>
         <ul>
