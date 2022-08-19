@@ -12,7 +12,7 @@
     "nuxt": "3.0.0-rc.8"
   },
   "dependencies": {
-    "sass": "^1.52.1"
+    "sass": "1.54.4"
   },
   "volta": {
     "node": "18.2.0"
